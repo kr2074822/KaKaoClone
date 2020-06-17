@@ -1,0 +1,164 @@
+body{
+  margin: 10px 20px 10px;
+  background-color: grsay;
+  border: 1px solid resd;
+  font-family: Sans-serif;
+}
+/*상태바*/
+.state_bar {
+  position: relative;
+  padding: 0 0 20px;
+
+}
+.state_bar span{
+  display: inline-block;
+}
+.state_bar .icon_bar{
+  position: absolute;
+  right: 0;
+  display: inline-block;
+}
+
+/*친구바*/
+.friend_bar{
+  position: relative;
+
+}
+.friend_bar span{
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+}
+.friend_bar .friend_icon{
+  position: absolute;
+  right: 0;
+  bottom:5px;
+  display: inline-block;
+}
+.friend_bar .friend_icon i{
+  padding: 0 5px 0;
+
+}
+
+/*친구목록*/
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+main{
+  animation: fadeIn 0.5s ease-in-out;
+  margin: 30px 0 0;
+}
+main a {
+  color: black;
+  text-decoration: none;
+}
+main ul {
+  padding: 0 0 0;
+
+}
+main ul > li{
+  list-style-type : none;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0 0 20px;
+}
+
+main ul > li .chat_contents{
+  align-items: center;
+  display: flex;
+}
+
+main ul > li .chat_contents img{
+  width: 55px;
+  height: 55px;
+  border-radius: 30%;
+  margin: 0 20px 0 0;
+}
+
+main ul > li .chat_contents div .fd_name{
+  font-size: 15px;
+  font-weight: bold;
+  display: block;
+}
+main ul > li .chat_contents div .fd_status{
+  font-size: 12px;
+  margin-top: 0px;
+  opacity: 0.6
+}
+
+main ul > li .chat_time{
+}
+main ul > li .chat_time span{
+  font-size: 12px;
+  opacity: 0.6
+}
+
+/*밑 메뉴바*/
+@keyframes showbar {
+  from{
+    transform: translateY(80px);
+  }
+  to{
+    transform: none;
+  }
+
+}
+.foot_menu{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  transform: translateY(80px);
+  animation: showbar 0.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.foot_menu ul {
+  padding: 0 40px 0;
+  display: flex;
+  justify-content: space-between;
+
+}
+.foot_menu ul > li{
+  list-style-type : none;
+}
+.foot_menu ul > li a{
+  color:black;
+}
+.fa{
+  font-size: 20px;
+}
+
+/*창크기*/
+@media screen and (min-width: 600px){
+  .bigscrean{
+    display: flex;
+    padding: 0 0 0;
+    margin: 0 0 0;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: powderblue;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 600px){
+  .bigscrean span{
+    display: none;
+  }
+  .bigscrean{
+    display: none;
+  }
+}

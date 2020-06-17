@@ -1,0 +1,244 @@
+body{
+  margin: 10px 20px 10px;
+  background-color: grsay;
+  border: 1px solid resd;
+  font-family: Sans-serif;
+}
+hr{
+  position: flex;
+  margin: 0 -20px 0;
+  shadow
+}
+/*상태바*/
+.state_bar {
+  position: relative;
+  padding: 0 0 20px;
+
+}
+.state_bar span{
+  display: inline-block;
+}
+.state_bar .icon_bar{
+  position: absolute;
+  right: 0;
+  display: inline-block;
+}
+
+/*친구바*/
+.friend_bar{
+  position: relative;
+  margin-bottom: 20px;
+}
+.friend_bar span{
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+}
+.friend_bar span a{
+  color: black;
+  text-decoration: none;
+}
+.friend_bar span a{
+  padding-right: 20px;
+}
+.friend_bar .friend_icon{
+  position: absolute;
+  right: 0;
+  bottom:5px;
+  display: inline-block;
+}
+.friend_bar .friend_icon a{
+    color:black;
+}
+
+.friend_bar .friend_icon i{
+  padding: 0 5px 0;
+
+}
+
+/*채팅들*/
+.chatting_log{
+
+}
+.chatting_log ul{
+  padding: 0 0 0;
+  list-style-type: none;
+
+}
+.chatting_log ul > li {
+  margin: 15px 0px 15px;
+  padding: 0 0 0;
+}
+.chatting_log ul > li .text_time{
+  padding-left: 3px;
+  display: inline;
+  font-size: 8px;
+}
+.chatting_log ul > li img{
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.chatting_log ul .text_in{
+  position: relative;
+  text-align: left;
+}
+.chatting_log ul .text_in .text_name{
+  font-weight: bold;
+  position: absolute;
+  top: 2px;
+  display: inline-block;
+  font-size: 10px;
+}
+.chatting_log ul .text_in .text_your{
+  display: inline;
+}
+.chatting_log ul .text_in .text_your span{
+  padding: 5px 5px 5px;
+  background-color: yellow;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+}
+.chatting_log ul .text_out{
+  position: relative;
+  text-align: right;
+}
+.chatting_log ul .text_out .text_mine{
+  display: inline;
+}
+.chatting_log ul .text_out .text_mine span{
+  padding: 5px 5px 5px;
+  background-color: yellow;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*채팅 아래*/
+.chatting_footer{
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chatting_footer .chatting_icon_r{
+  display: flex;
+  padding: 10px 10px 10px 10px;
+  font-size: 30px;
+}
+
+.chatting_text{
+}
+.chatting_text input{
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 4px;
+  resize: none;
+  overflow: hidden;
+}
+.chatting_footer .chatting_icon_l{
+  display: flex;
+  right: 0;
+  font-size: 30px;
+}
+.chatting_footer .chatting_icon_l i:first-child{
+  padding-left: 10px;
+}
+.chatting_footer .chatting_icon_l i{
+  padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*창크기*/
+@media screen and (min-width: 600px){
+  .bigscrean{
+    display: flex;
+    padding: 0 0 0;
+    margin: 0 0 0;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: powderblue;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 600px){
+  .bigscrean span{
+    display: none;
+  }
+  .bigscrean{
+    display: none;
+  }
+}
